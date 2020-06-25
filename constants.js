@@ -126,14 +126,3 @@ const states = {
         "Vídeň", "Linz", "Salzburg", "Innsbruck", "Graz", "Klagenfurt",
     ]
 }
-let numberOfCities = 0;
-let statesInLowerCase = [];
-
-Object.values(states).forEach(state => {
-    state.forEach(city => {
-        numberOfCities++;
-    })
-})
-Object.keys(states).forEach(state => {
-    statesInLowerCase.push(state.toLowerCase())
-})
