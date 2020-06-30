@@ -13,7 +13,7 @@ const getHighScoreCookie = _ => {
 }
 
 
-let correctAnswersStreak = document.querySelector('footer').textContent
+let correctAnswersStreak = 0
 let badAnswers = ''
 let rndCity
 let rightAnswer
@@ -22,7 +22,6 @@ $(_ => {
     let highScoreFromCookie = getHighScoreCookie()
     if (highScoreFromCookie != null) {
         updateHighScore(highScoreFromCookie)
-        correctAnswersStreak = highScoreFromCookie
     }
     rndCity = getRndCity()
     changeCity(rndCity)
